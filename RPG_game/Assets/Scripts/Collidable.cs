@@ -27,7 +27,7 @@ public class Collidable : MonoBehaviour
                 continue;           // migliorabile 
             // Debug.Log(hits[i].name);
             OnCollide(hits[i]);     // se c'è una collisione chiamo la funzione OnCollide per gestirla
-            hits[i] = null; 
+            hits[i] = null;         // cancello la collisione che è già stata gestita
         }   
     }
 

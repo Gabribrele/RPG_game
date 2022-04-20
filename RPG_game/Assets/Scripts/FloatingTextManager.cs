@@ -14,7 +14,7 @@ public class FloatingTextManager : MonoBehaviour
     {
         FloatingText txt = floatingTexts.Find(t => !t.active);      //lambda function 
 
-        if (txt == null) // se no esiste viene creato
+        if (txt == null) // se non esiste viene creato
         {
             txt = new FloatingText();
             txt.go = Instantiate(textPrefab);
